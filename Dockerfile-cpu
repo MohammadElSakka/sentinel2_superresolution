@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------
+# Author: M. El Sakka
+# Github: https://github.com/MohammadElSakka
+# Date: 2025-08-25
+# Description: Dockerfile for running Sentinel-2 super-resolution without GPU support
+# -----------------------------------------------------------------------------
+
+FROM python:3.10
+
+RUN pip install git+https://framagit.org/jmichel-otb/sentinel2_superresolution.git
+
+WORKDIR /app
